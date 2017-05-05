@@ -6,7 +6,7 @@ export class Timer {
     this.secs = secs;
   }
 
-  start() {
+  get start() {
       let promise = new Promise((resolve, reject) => {
 
             setTimeout(() => {

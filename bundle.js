@@ -90,7 +90,7 @@ var Timer = exports.Timer = function () {
 
   _createClass(Timer, [{
     key: 'start',
-    value: function start() {
+    get: function get() {
       var _this = this;
 
       var promise = new Promise(function (resolve, reject) {
@@ -118,7 +118,7 @@ var Timer = exports.Timer = function () {
 var _Timer = __webpack_require__(0);
 
 var timer1 = new _Timer.Timer(5);
-timer1.start().then(function (x) {
+timer1.start.then(function (x) {
   return document.title = x;
 });
 
